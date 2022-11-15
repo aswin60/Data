@@ -1,0 +1,16 @@
+create or replace table actor_target (actor_id int,first_name varchar,last_name varchar,last_update varchar);
+create or replace table address_target(address_id int,address varchar,address2 varchar,city_id int,postal_code int,phone int,location varchar,last_update varchar);
+create or replace table category_target(category_id int,last_update varchar,name varchar);
+create or replace table city_target(city varchar,city_id int,country_id int,last_update varchar);
+create or replace table country_target(country varchar,country_id int,last_update varchar);
+create or replace table customer_target(customer_id int,store_id int,first_name varchar,last_name varchar,email varchar,address_id int,active int,create_date varchar,last_update varchar);
+create or replace table film_actor_target(actor_id int,film_id int,last_update varchar);
+create or replace table film_category_target(film_id int,category_id int,last_update varchar);
+create or replace table film_text_target(film_id int,title varchar,description varchar);
+create or replace table film_target(film_id int,title varchar,description varchar,release_year int,language_id int,original_language_id int,rental_duration int,rental_rate int,length int,replacement_cost int,rating varchar,special_features varchar,last_update varchar);      
+create or replace table inventory_target(inventory_id int,film_id int,store_id int,last_update varchar); 
+create or replace table language_target(language_id int,name varchar,last_update varchar);
+create or replace table payment_target(payment_id int,customer_id int,staff_id int,rental_id int,amount int);
+create or replace table rental_target(rental_id int,rental_date varchar,inventory_id int,customer_id int,return_date varchar,staff_id int,last_update varchar);
+create or replace table staff_target(staff_id int,first_name varchar,last_name varchar,address_id int,email varchar,store_id int, active int,username varchar,password varchar,last_update varchar);
+create or replace table store_target(store_id int,manager_staff_id int,address_id int,last_update varchar);
