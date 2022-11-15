@@ -1,0 +1,7 @@
+create or replace pipe dw_pipe
+auto_ingest = true as
+COPY INTO JSON_SRC
+FROM (SELECT T.$1,METADATA$FILENAME AS FILE_NAME,
+                  METADATA$FILE_ROW_NUMBER AS FILE_ROW_SEQ,
+                  current_timestamp AS LDTS FROM @jsonstage T
+                   );
