@@ -1,6 +1,0 @@
-CREATE OR REPLACE TABLE JSON_SRC(RAW_FILE VARIANT,
-                                FILE_NAME VARCHAR,
-                                FILE_ROW_NUM_SEQ NUMBER,
-                                LDTS VARCHAR
-                                );
-      
